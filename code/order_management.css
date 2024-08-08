@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+h1{
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.menu{
+    margin-left: 30px;
+    min-width: 1300px;
+}
+
+.tab-button {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #DCDCDC;
+    border-radius: 10px 10px 10px 10px;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    font-size: 14px;
+    left: 100px;
+}
+.tab-button.active {
+    background-color: #516c72;
+    color: white;
+}
+.order-table {
+    background-color: white;
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-left: 90px;
+}
+.order-table th{
+    background-color: #DCDCDC;
+    font-size: 14px;
+    padding: 10px;
+    text-align: center;
+}
+.order-table td {
+    background-color: white;
+    /*border: 1px solid #ccc;*/
+    padding: 10px;
+    text-align: center;
+}
+
+input[type="submit"] {
+    width: 100px;  /* ³]¸m©T©w¼e«× */
+}

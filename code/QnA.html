@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>Q&A Page</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="order_management.css">
+    <link rel="stylesheet" href="edit_profile.css">
+    <link rel="stylesheet" href="QnA.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel='icon' type='' href='https://cdn-icons-png.flaticon.com/256/55/55283.png'>
+</head>
+<body>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <header>
+        <a href="homepage2.html">
+        <div class="logo">EASYRENT</div>
+        </a>
+        <div class="user-menu">
+            <img src="user.png" alt="User Icon" class="user-icon" id="userIcon">
+            <div class="dropdown" id="dropdown">
+                <p>哈囉 ! 使用者</p>
+                <button onclick="location.href='edit_profile.php'">編輯個人資料</button>
+                <button onclick="location.href='order_management.php'">訂單管理</button>
+                <button onclick="location.href='my_reviews.php'">我的評價</button>
+                <button onclick="location.href='QnA.html'">Q & A</button>
+                <button id="logoutbtn" onclick="location.href='homepage.html'">登出</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="chat-container" style="margin-top: 30px;">
+        <div class="chat-header">EASYRENT數位客服</div>
+        <div class="chat-messages" id="chat-messages">
+            <div class="message company">
+                <img src="客服.png" alt="Company">
+                您好！請輸入您想詢問的問題，讓我為您服務！
+            </div>
+        </div>
+        <div class="chat-input" style="display: flex;">
+            <form action="QnA.php" method="post" style="display: flex; flex-grow: 1;">
+              <input type="text" id="user-input" name="que_question" placeholder="請輸入您的問題" style="flex-grow: 1; width:600px; height: 24px;">
+              <button type="submit" style="width:100px; height: 47px;">送出</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // 獲取URL參數
+        const urlParams = new URLSearchParams(window.location.search);
+        const question = urlParams.get('question');
+
+        // 如果有問題參數,顯示在對話框中
+        if (question) {
+            addUserMessage(decodeURIComponent(question));
+        }
+
+        function addUserMessage(message) {
+            const chatMessages = document.getElementById('chat-messages');
+            const newMessage = document.createElement('div');
+            newMessage.classList.add('message', 'user');
+            newMessage.textContent = message;
+            chatMessages.appendChild(newMessage);
+        }
+    </script>
+    <script src="homepage.js"></script>
+    <script src="homepage2.js"></script>
+    <script src="login.js"></script>
+    <script src="edit_profile.js"></script>
+    <script src="QnA.js"></script>
+
+</body>
+
+<footer class="footer" style="margin-top: 80px;">
+    <div class="footer-container">
+        <div class="footer-column">
+            <img src="car.png" alt="logo" class="footer-logo">
+        </div>
+        <div class="footer-column">
+            <h3>EASYRENT</h3>
+            <ul>
+                <li><a href="#">關於我們</a></li>
+                <li><a href="#">人才招募</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>租車公司</h3>
+            <ul>
+                <li><a href="#">店家登入</a></li>
+                <li><a href="#">車輛上架</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>使用指南</h3>
+            <ul>
+                <li><a href="#">租車說明</a></li>
+                <li><a href="#">常見問題</a></li>
+                <li><a href="#">使用者評論</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>服務規章</h3>
+            <ul>
+                <li><a href="#">使用者條款</a></li>
+                <li><a href="#">隱私權政策</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>追蹤我們</h3>
+            <ul class="social-icons">
+                <li><a href="https://www.facebook.com/profile.php?id=61561113173951"><img src="facebook.png" alt="Facebook"></a></li>
+                <li><a href="#"><img src="line.png" alt="LINE"></a></li>
+                <li><a href="#"><img src="messenger.png" alt="Messenger"></a></li>
+                <li><a href="#"><img src="youtube.png" alt="YouTube"></a></li>
+            </ul>
+            <br>
+            <p>COPYRIGHT © EASYRENT CO., LTD 2024 ALL RIGHTS RESERVED.</p>
+        </div>
+    </div>
+</footer>
+
+</html>

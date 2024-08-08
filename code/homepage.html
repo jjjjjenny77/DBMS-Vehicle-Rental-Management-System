@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Sharing Cars</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="login.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel='icon' type='' href='https://cdn-icons-png.flaticon.com/256/55/55283.png'>
+</head>
+<body>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <header>
+        <a href="homepage.html">
+        <div class="logo">EASYRENT</div>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#">🌎 繁體中文</a></li>
+                <button id="btn" type="button">註冊/登入</button>
+            </ul>
+        </nav>
+    </header>
+    
+    <video autoplay muted loop id="myVideo" width="1300">
+        <source src="run.mp4" type="video/mp4" >
+    </video>
+    
+
+    <div class="caption">
+        <h1>駕馭無限可能</h1>
+        <br>
+        <p>Your Adventure Starts Here</p>
+    </div>
+
+    <div class="container">
+        <div class="tab">
+            <button class="tablinks active" onclick="openTab(event, 'car')">租汽車</button>
+            <button class="tablinks" onclick="openTab(event, 'bike')">租機車</button>
+        </div>
+        <div id="car" class="tabcontent">
+            <form class="rental-form">
+                <div class="form-group2">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <select id="location", name="location">
+                        <option value="" disabled selected>租車地點</option>
+                        <option value="台北市">台北</option>
+                        <option value="新北市">新北</option>
+                        <option value="桃園市">桃園</option>
+                        <option value="台中市">台中</option>
+                        <option value="台南市">台南</option>
+                        <option value="高雄市">高雄</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <i class="fas fa-calendar-alt"></i>
+                    <input type="date" id="pickup-date", name = "ren_startdate">
+                    <select id="pickup-time", name="ren_starttime">
+                        <option value="8:00">8:00</option>
+                        <option value="9:00">9:00</option>
+                        <option value="10:00">10:00</option>
+                        <option value="11:00">11:00</option>
+                        <option value="12:00">12:00</option>
+                        <option value="13:00">13:00</option>
+                        <option value="14:00">14:00</option>
+                        <option value="15:00">15:00</option>
+                        <option value="16:00">16:00</option>
+                        <option value="17:00">17:00</option>
+                        <option value="18:00">18:00</option>
+                        <option value="19:00">19:00</option>
+                        <option value="20:00">20:00</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <i class="fas fa-calendar-alt"></i>
+                    <input type="date" id="return-date", name = "ren_enddate">
+                    <select id="return-time", name = "ren_endtime">
+                        <option value="8:00">8:00</option>
+                        <option value="9:00">9:00</option>
+                        <option value="10:00">10:00</option>
+                        <option value="11:00">11:00</option>
+                        <option value="12:00">12:00</option>
+                        <option value="13:00">13:00</option>
+                        <option value="14:00">14:00</option>
+                        <option value="15:00">15:00</option>
+                        <option value="16:00">16:00</option>
+                        <option value="17:00">17:00</option>
+                        <option value="18:00">18:00</option>
+                        <option value="19:00">19:00</option>
+                        <option value="20:00">20:00</option>
+                    </select>
+                </div>
+                <div class="form-group2">
+                    <select id="seats" , name = "veh_type">
+                        <option value="" disabled selected>車種</option>
+                        <option value="轎車">轎車</option>
+                        <option value="休旅車">休旅車</option>
+						<option value="箱型車">箱型車</option>
+                    </select>
+                </div>
+                <button type="submit">搜尋</button>
+            </form>
+        </div>
+        <div id="bike" class="tabcontent" style="display:none">
+            <form>
+                <button type="submit">搜尋</button>
+            </form>
+        </div>
+    </div>
+        <script src="homepage.js"></script>
+    </div>
+
+    <div id="overlay" class="overlay">
+        <div class="overlay-content">
+            <button id="closeOverlay" class="close-btn">X</button>
+            <div id="login-form">
+            <form class="test" method="post" action="idconnect.php">
+                <label for="id">帳號:</label>
+                <input type="text" id="cus_ID" name="id" placeholder="請輸入身分證字號" required>
+                <button type="submit">繼續</button>
+            </form>
+                <a href="https://accounts.google.com/v3/signin/identifier?hl=zh-TW&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&service=mail&ec=GAlAFw&authuser=0&ddm=0&flowName=GlifWebSignIn&flowEntry=AddSession">
+                <button class="social-login">繼續使用 Google 登入</button>
+                </a>
+                <a href="https://zh-tw.facebook.com/login.php/">
+                <button class="social-login">繼續使用 Facebook 登入</button>
+                </a>
+        </div>
+    </div>
+
+    </div>
+        <script src="login.js"></script>
+    </div>
+</body>
+<img src="評價.jpg" alt="logo" class="reviews" >
+<footer class="footer"style="margin-top:10px;">
+    <div class="footer-container">
+        <div class="footer-column">
+            <img src="car.png" alt="logo" class="footer-logo">
+        </div>
+        <div class="footer-column">
+            <h3>EASYRENT</h3>
+            <ul>
+                <li><a href="#">關於我們</a></li>
+                <li><a href="#">人才招募</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>租車公司</h3>
+            <ul>
+                <li><a href="#">店家登入</a></li>
+                <li><a href="#">車輛上架</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>使用指南</h3>
+            <ul>
+                <li><a href="#">租車說明</a></li>
+                <li><a href="#">常見問題</a></li>
+                <li><a href="#">使用者評論</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>服務規章</h3>
+            <ul>
+                <li><a href="#">使用者條款</a></li>
+                <li><a href="#">隱私權政策</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>追蹤我們</h3>
+            <ul class="social-icons">
+                <li><a href="https://www.facebook.com/profile.php?id=61561113173951"><img src="facebook.png" alt="Facebook"></a></li>
+                <li><a href="#"><img src="line.png" alt="LINE"></a></li>
+                <li><a href="#"><img src="messenger.png" alt="Messenger"></a></li>
+                <li><a href="#"><img src="youtube.png" alt="YouTube"></a></li>
+            </ul>
+            <br>
+            <p>COPYRIGHT © EASYRENT CO., LTD 2024 ALL RIGHTS RESERVED.</p>
+        </div>
+    </div>
+</footer>
+</html>

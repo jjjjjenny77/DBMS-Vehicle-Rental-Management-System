@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #edf1f1;
+    height: 10vh;
+}
+.content {
+    background-color: white;
+    padding: 15px;
+    margin-block: 0px;
+    margin-block-start: -35px;
+    margin-left: 450px;
+    /*margin: 20px; *//* 上下左右留白 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 增加陰影效果 */
+    border-radius: 10px; /* 圓角 */
+    width: 300px;
+}
+
+.save-button {
+    background-color: #516c72;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    flex-grow: 0;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+.profile-item {
+    margin-bottom: 10px;
+}
+.profile-item label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.profile-item .value {
+    margin-bottom: 5px;
+}
+.edit-link {
+    color: #007BFF;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+}
