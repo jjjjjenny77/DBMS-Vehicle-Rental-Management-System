@@ -24,14 +24,14 @@ availability.
 manage pricing models.
 3. At least six locations(manager can add and delete sites)
 4. Fool-proof design
+## ER diagram
+![image](https://github.com/jjjjjenny77/images/blob/main/ER%20diagram.png)
 ## How to run the code
 * Login in http://localhost/phpMyAdmin/.
 * Use the SQL code below to create table.
 * Download all files in my "code" folder and put them in the WWW folder
 * Change the user account and password in mysql_connect.inc.php
 * Use browser to type in the URL bar: localhost/homepage.html
-## ER diagram
-![image](https://github.com/jjjjjenny77/images/blob/main/ER%20diagram.png)
 ## Codes to create table :
 ```SQL
 CREATE TABLE CUSTOMER (
