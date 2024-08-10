@@ -24,6 +24,14 @@ availability.
 manage pricing models.
 3. At least six locations(manager can add and delete sites)
 4. Fool-proof design
+## How to run the code
+* Download SQL Database syntax first. There are two ways to build a database and the results are the same.
+* Open in VSCode. Right-click all SQL cases and select RUNMQQy
+* Direct operation on phpadmin
+* Please import the two csvs. into the table, each section is the most satisfying and the others are already in SQL.
+* Download all PHP files and put them in the WWW folder
+* Change the user account and password in mysql_connect.inc.php
+* Use Browse to type in the URL bar: localhost/login.php
 ## ER diagram
 ![image](https://github.com/jjjjjenny77/images/blob/main/ER%20diagram.png)
 ## Codes to create table :
