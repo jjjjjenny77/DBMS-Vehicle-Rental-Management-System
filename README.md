@@ -1,5 +1,5 @@
 # DBMS-Vehicle-Rental-Management-System
-Codes to create table :
+## Codes to create table :
 ```SQL
 CREATE TABLE CUSTOMER (
   CUS_IDNUM     VARCHAR(10) PRIMARY KEY,
