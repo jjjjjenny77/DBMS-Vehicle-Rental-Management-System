@@ -1,6 +1,6 @@
 # DBMS-Vehicle-Rental-Management-System
 ## ER diagram
-![image](https://github.com/jjjjjenny77/images/blob/main/ERDiagram_Group12.pdf)
+![image](https://github.com/jjjjjenny77/images/blob/main/ER%20diagram.png)
 ## Codes to create table :
 ```SQL
 CREATE TABLE CUSTOMER (
