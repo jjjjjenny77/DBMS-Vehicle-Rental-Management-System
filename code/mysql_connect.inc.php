@@ -11,9 +11,9 @@ $db_server = "localhost";
 // 資料庫名稱
 $db_name = "sharingcar";
 // 資料庫管理者帳號
-$db_user = "root";
+$db_user = " ";
 // 資料庫管理者密碼
-$db_passwd = "Iamjenny@920707";
+$db_passwd = " ";
 
 // 對資料庫連線
 $conn = new mysqli($db_server, $db_user, $db_passwd);
