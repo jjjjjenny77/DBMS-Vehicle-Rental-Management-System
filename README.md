@@ -25,13 +25,11 @@ manage pricing models.
 3. At least six locations(manager can add and delete sites)
 4. Fool-proof design
 ## How to run the code
-* Download SQL Database syntax first. There are two ways to build a database and the results are the same.
-* Open in VSCode. Right-click all SQL cases and select RUNMQQy
-* Direct operation on phpadmin
-* Please import the two csvs. into the table, each section is the most satisfying and the others are already in SQL.
-* Download all PHP files and put them in the WWW folder
+* Login in http://localhost/phpMyAdmin/.
+* Use the SQL code below to create table.
+* Download all files in my "code" folder and put them in the WWW folder
 * Change the user account and password in mysql_connect.inc.php
-* Use Browse to type in the URL bar: localhost/login.php
+* Use browser to type in the URL bar: localhost/homepage.html
 ## ER diagram
 ![image](https://github.com/jjjjjenny77/images/blob/main/ER%20diagram.png)
 ## Codes to create table :
@@ -44,7 +42,7 @@ CREATE TABLE CUSTOMER (
   CUS_EMAIL     VARCHAR(200)
 );
 INSERT INTO CUSTOMER VALUES('H225871103','vicky123','張殷祈','0979576014','vicky4022531@gmail.com');
-INSERT INTO CUSTOMER VALUES('H225902416','jenny123','許甄芸','0919920005','jennyxu0569.mg10@nycu.edu.tw');
+INSERT INTO CUSTOMER VALUES('H225902416','jenny123','Jenny','0919920005','jennyxu0569.mg10@nycu.edu.tw');
 INSERT INTO CUSTOMER VALUES('B223380210','981981','白欣怡','0987297107','cynthiapai.114.mg10@nycu.edu.tw');
 INSERT INTO CUSTOMER VALUES('C123456789','password1','林志玲','0987654321','lin.chiling@gmail.com');
 INSERT INTO CUSTOMER VALUES('D987654321','password2','王大明','0912345678','daming.wang@example.com');
