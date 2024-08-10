@@ -1,4 +1,28 @@
 # DBMS-Vehicle-Rental-Management-System
+## Project Overview:
+Create a system for managing a vehicle rental service that allows users to
+book vehicles online and manage their rentals.
+Construct a database and provide an ER diagram for the following tasks.
+## Basic Functional Requirements:
+1. User Capabilities:
+∙ Account Management: Users can register, login, and manage their
+accounts.
+∙ Vehicle Booking: Browse available vehicles(at least two types of
+vehicles), book rentals, and manage bookings(cancel order).
+∙ Payment System: Process payments for rentals(at least three payment
+methods) and receive invoices.
+∙ Review and Ratings: Rate vehicles and provide feedback on rental
+experiences.
+2. System Manager Capabilities:
+∙ Vehicle Management: Add, update, and remove vehicles from the
+system.
+∙ Booking Management: View and manage all bookings, check vehicle
+availability.
+∙ Customer Service: Handle customer inquiries and manage disputes.
+∙ Financial Overviews: Track payments, generate revenue reports, and
+manage pricing models.
+3. At least six locations(manager can add and delete sites)
+4. Fool-proof design
 ## ER diagram
 ![image](https://github.com/jjjjjenny77/images/blob/main/ER%20diagram.png)
 ## Codes to create table :
