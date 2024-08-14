@@ -32,6 +32,8 @@ manage pricing models.
 * Download all files in my "code" folder and put them in the WWW folder
 * Change the user account and password in mysql_connect.inc.php
 * Use browser to type in the URL bar: localhost/homepage.html
+## Watch my demo vedio below!
+https://youtu.be/gm3NfEpTphY
 ## Codes to create table :
 ```SQL
 CREATE TABLE CUSTOMER (
