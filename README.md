@@ -1,5 +1,5 @@
 # DBMS-Vehicle-Rental-Management-System
-> This note record and share the final project of DBMS course about constructing a vehicle rental system including administrator side 💻
+> This note record and share the final project of DBMS course in 【112下】 about constructing a vehicle rental system including administrator side
 ## Project Overview:
 Create a system for managing a vehicle rental service that allows users to
 book vehicles online and manage their rentals.
